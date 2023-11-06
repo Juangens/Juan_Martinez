@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lasng="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="https://kit.fontawesome.com/8a00c40eac.js" crossorigin="anonymous"></script>
+    </head>
+        <body>
+            <div id="header">
+                <div class="container">
+                    <nav>
+                        <img src="Imagenes/Juan Martinez.png" class="Logo">
+                        <ul id="sidemenu">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#itknowledge">IT Knowledge</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>                                
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    
+                    <div class="header-text">
+                        <p>Aplication Web Developer</p>
+                        <h1>Hello, <br></be> I am <span>Juan Martinez,</span><br>from Spain</h1>
+                    </div>
+                </div>
+            </div>
+            <!----------------about---------------->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="Imagenes/About.png">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+            <!--------TEXTO INTRODUCCION-------->
+                            <p class="text2">I have an extensive experience in logistics, since I have oriented my entire career in this direction, 
+                                to be able to understand and control the import - export process from the beginning to the end and to be able to anticipate 
+                                any inconveniences that may arise during the process.<br>After so many years in this sector, I have decided to take a 180 degree turn in my proffesional career, 
+                                and study web application development, since it is a field that has always attracted my attention and is where I want to guide my working life from now on.</p> 
+
+                            <div class="tab-titles">
+                                <P class="tab-links active-link" onclick="opentab('Skills')">Skills</P>
+                                <P class="tab-links" onclick="opentab('Experience')">Experience</P>
+                                <P class="tab-links" onclick="opentab('Education')">Education</P>
+                                <P class="tab-links" onclick="opentab('Languages')">Languages</P>
+                                <P class="tab-links" onclick="opentab('Other Skills')">Other Skills</P>
+                            </div>
+                            <div class="tab-contents active-tab" id="Skills">
+                                <ul>
+                                    <li><span>Design and Development of Web apps</span><br>Designing Web/App Interfaces</li>
+                                    <li><span>Logistics Specialist</span><br>Import and Export Procedures</li>
+                                    <li><span>Purchase Department</span><br>Negotiations and Stock Control</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Experience">
+                                <ul>
+                                    <li><span>April 2019</span><br>RS TURIA, Purchase and Logistics Dep</li>
+                                    <li><span>October 2017 - January 2019</span><br>Power Electronics, IMP - EXP Manager</li>
+                                    <li><span>March 2012 - October 2017</span><br>Brinor Int., Transport Manager</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>Ongoing</span><br>Professional Training in Design and Development of Web apps</li>
+                                    <li><span>2010</span><br>Master Specialist in Multimodal Transport</li>
+                                    <li><span>2005</span><br>Professional Training in International Transport</li>
+                            </div>
+                            <div class="tab-contents" id="Languages">
+                                <ul>
+                                    <li><span>English</span><br>Proficiency</li>
+                                    <li><span>French</span><br>Intermediate</li>
+                                    <li><span>Spanish</span><br>Mother Tonge</li>
+                            </div>
+                            <div class="tab-contents" id="Other Skills">
+                                <ul>
+                                    <li><span>Driving License</span><br>A, B, </li>
+                                    <li><span>Coastal Skipper</span></li>
+                                    <li><span>International Geographic Mobility</span></li>
+                            </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!----------IT Knowledge---------->
+            <div id="itknowledge">
+                <div class="Container">
+                    <h1 class="sub-title2">IT Knowledge</h1>
+                    <div class="knowledge-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Developer of web applications</h2>
+                            <p>Learning Ongoing</p>
+                            <a href="https://www.solvam.es/desarrollo-de-aplicaciones-web/">Link to Web</a>
+                        </div> 
+                        <div>
+                            <i class="fa-brands fa-java"></i>
+                            <h2>Java</h2>
+                            <p>Learning Ongoing</p>
+                            <a href="https://www.solvam.es/desarrollo-de-aplicaciones-web/">Link to Web</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h2>IBM Full-stack developer</h2>
+                            <p>Learning Ongoing</p>
+                            <a href="https://acortar.link/gJmlYw">Link to Web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------------Projects---------------->
+            <div id="projects">
+                <div class="container">
+                    <h1 class="sub-title">Projects</h1>
+                    <p>Below you can find my list of "TO DO" Projects that I would like to work on</p>
+                    <div class="project-list">
+                        <div class="projects">
+                            <img src="Imagenes/PJ-1.png">
+                        </div>
+                        <div class="projects">
+                            <img src="Imagenes/PJ-2.png">
+                        </div>
+                        <div class="projects">
+                            <img src="Imagenes/PJ-3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!----------------Contact---------------->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i> Juangens@yahoo.es</p>
+                            <p><i class="fa-solid fa-square-phone"></i> +34 612460738</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/juan-martinez-63173363?trk=nav_responsive_tab_profile"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/Juangens"><i class="fa-brands fa-square-github"></i></a>
+                            </div>
+                            <a href="Imagenes/Juan Martinez  CV_EN.pdf" class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="Submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright Juan</p>
+                </div>
+            </div>
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbyAkoWfj5XI1cvz2A7ii_rQa41PjtJlj1GIPTb9_-ISe_9elZM-UtoKtwVgCnXxlzfTjA/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function(){
+                            msg.innerHTML = ""                            
+                        },5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+                <script>
+                    var sidemenu = document.getElementById("sidemenu");
+                    
+                    function openmenu(){
+                        sidemenu.style.right = "0";                        
+                    }
+                    function closemenu(){
+                        sidemenu.style.right = "-200px";                        
+                    }
+                </script>
+        </body>
+</html>
