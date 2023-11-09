@@ -88,7 +88,6 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-    margin-top: 10px;
     flex-basis: auto;
 }
 .about-col-1 img{
@@ -304,11 +303,20 @@ form .btn.btn2{
     display: block;
 }
 /*------------CSS for Small screen----------*/
-nav .fa-solid{
+nav .fa-solid{ /*------------no aparece en web----------*/
     display: none;
 }
 
 @media only screen and (max-width: 600px){
+
+    #menuIcon {
+    position: fixed;
+    top: 10px; /* Distancia desde la parte superior de la ventana */
+    right: 10px; /* Distancia desde el lado derecho de la ventana */
+    z-index: 1000; /* Ajusta esto según sea necesario para asegurarte de que el icono esté en la capa superior */
+}
+
+
     #header{
         background-image: url(Imagenes/Poguito2.png);
         width: 100%;
@@ -337,7 +345,7 @@ nav .fa-solid{
         right: -200px; 
         width: 200px;
         height: 100vh;
-        padding-top: 50px;      
+        padding-top: 10px;      
         z-index: 2;  
         transition: right 0.5s;
     }   
